@@ -1,0 +1,106 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  background-color: #E5E5E5;
+}
+
+main {
+  margin-top: 80px;
+  margin-left: 80px;
+  background: url(../image/bg-repeat.jpg);
+  width: 800px;
+  height: 402px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.contact {
+  background-size: contain;
+  display: flex;
+  gap: 68px;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-text h1 {
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 11px;
+  color: #FFFFFF;
+}
+
+.contact-text p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #FFFFFF;
+  width: 300px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #FFFFFF;
+  width: 340px;
+  height: 378px;
+}
+
+.contact-form .span-note {
+  margin: 7px 0 20px -7px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.contact-form textarea,
+input::placeholder-shown {
+  font-size: 15px;
+  font-weight: 400;
+  padding: 8px;
+}
+
+.contact-form input,
+textarea {
+  margin-top: 15px;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 8px;
+  border-radius: 5px;
+  resize: none;
+  border: 1px solid #000000;
+}
+
+.contact-form input:first-child {
+  margin-top: 0;
+}
+
+.contact-form button {
+  cursor: pointer;
+  padding: 12px;
+  background-color: #3ccc87;
+  border: none;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.span-required {
+  color: #F52E2E;
+  font-size: 8px;
+  font-weight: 400;
+}
+
+.error-msg {
+  border: 1px solid #F52E2E !important;
+}
+
+.form-confirmed {
+  border: 1px solid #3ccc87 !important;
+}
