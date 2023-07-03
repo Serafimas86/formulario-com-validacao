@@ -1,18 +1,19 @@
 body {
   font-family: 'Roboto', sans-serif;
   display: flex;
-  background-color: #E5E5E5;
+  background: url(../image/bg-repeat.jpg);
+  background-size: contain;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
 main {
-  margin-top: 80px;
-  margin-left: 80px;
-  background: url(../image/bg-repeat.jpg);
-  width: 800px;
-  height: 402px;
+  max-width: 1440px;
+  height: 100%;
   display: flex;
   flex-direction: column;
-
+  justify-content: center;
 }
 
 .contact {
@@ -103,4 +104,33 @@ textarea {
 
 .form-confirmed {
   border: 1px solid #3ccc87 !important;
+}
+
+/* CSS Responsivo */
+
+@media screen and (max-width: 768px) {
+  main {
+    padding: 20px;
+  }
+
+  .contact {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    height: auto;
+  }
+
+  .contact-text {
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-text p {
+    width: auto;
+  }
+
+  .contact-form {
+    width: 100%;
+    height: auto;
+  }
 }
